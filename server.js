@@ -4,8 +4,9 @@ function sleep(ms) {
 }
 
 async function main() {
+  const typeName = process.env.MICROSERVICE_TYPE;
   while(true) {
-    console.log("Microservices rock!");
+    console.log(`${typeName} Microservices rock!`);
     await sleep(5000);
   }
 }
